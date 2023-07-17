@@ -8,6 +8,10 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
+  // images:{
+  //   domains:['images.clerk.dev']
+  // }
+  // ,
   swcMinify: true,
   transpilePackages: ["@acme/api", "@acme/db"],
   // We already do linting on GH actions
