@@ -6,11 +6,7 @@ import type { AppRouter } from "@acme/api";
 import { useAuth, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
- 
-
 const Home: NextPage = () => {
-  
-
   return (
     <>
       <Head>
@@ -38,15 +34,12 @@ export default Home;
 
 const AuthShowcase: React.FC = () => {
   const { isSignedIn } = useAuth();
-   
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       {isSignedIn && (
         <>
-          <p className="text-center text-2xl text-white">
-           
-          </p>
+          <p className="text-center text-2xl text-white"></p>
           <div className="flex items-center justify-center">
             <UserButton
               appearance={{
